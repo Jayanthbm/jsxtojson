@@ -49,7 +49,7 @@ files.forEach((file) => {
 
       if (path.node.name.name === "SubHeader") {
         let tmp = {
-          type: "SubHeader",
+          type: "subheading",
           title: path.node.attributes[0].value.value,
         };
         jsonStructure.content.push(tmp);
@@ -57,7 +57,7 @@ files.forEach((file) => {
 
       if (path.node.name.name === "St") {
         let tmp = {
-          type: "St",
+          type: "paragraph",
           lines: [],
         };
         for (let i = 0; i < path.node.attributes.length; i++) {
